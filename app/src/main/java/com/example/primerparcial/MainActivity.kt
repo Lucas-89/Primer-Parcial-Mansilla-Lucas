@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             PrimerParcialTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     MainPage(
-                        name = "Android",
+
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
