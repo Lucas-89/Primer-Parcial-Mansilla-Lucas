@@ -1,9 +1,13 @@
 package com.example.primerparcial
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -31,12 +35,17 @@ fun Page1(
     var mail by remember { mutableStateOf("") }
     var pass by remember { mutableStateOf("") }
     Column (
-        modifier = modifier.padding(20.dp)
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
             text = "Pagina de Ingreso",
-            modifier = modifier
+            modifier = modifier,
+            style = MaterialTheme.typography.headlineLarge
         )
+        Spacer(modifier = modifier.padding(20.dp))
+
         TextField(
             value = mail,
             onValueChange ={mail = it},
@@ -60,7 +69,7 @@ fun Page1(
         },
             modifier
                 .align(Alignment.CenterHorizontally)
-                .padding(10.dp)) {
+                ) {
             Text(
                 text = "Ingresar",
                 modifier = modifier.padding(horizontal = 5.dp)

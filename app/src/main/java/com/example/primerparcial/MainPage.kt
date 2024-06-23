@@ -29,49 +29,6 @@ import com.example.primerparcial.ui.theme.PrimerParcialTheme
 fun MainPage(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
 
-//    val usuario = "pedro@pe.com.ar"
-//    val contraseña = "abc123"
-//
-//    var mail by remember { mutableStateOf("")}
-//    var pass by remember { mutableStateOf("")}
-//
-//    Column (
-//    modifier = modifier.padding(20.dp)
-//    ){
-//        Text(
-//            text = "Pagina de Ingreso",
-//            modifier = modifier
-//        )
-//        TextField(
-//            value = mail,
-//            onValueChange ={mail = it},
-//            label = { Text(text = "mail")},
-//            modifier = modifier
-//                .padding(20.dp)
-//                .fillMaxWidth()
-//        )
-//        TextField(
-//            value = pass,
-//            onValueChange ={pass = it},
-//            label = { Text(text = "contraseña")},
-//            modifier = modifier
-//                .padding(20.dp)
-//                .fillMaxWidth()
-//        )
-//        Button(onClick = {
-//            if (mail == usuario && pass == contraseña){
-//                navController.navigate("page1")
-//            }
-//        },
-//            modifier
-//                .align(Alignment.CenterHorizontally)
-//                .padding(10.dp)) {
-//            Text(
-//                text = "Ingresar",
-//                modifier = modifier.padding(horizontal = 5.dp)
-//            )
-//        }
-//    }
     NavHost(
         navController = navController,
        // modifier = Modifier.padding(it),
